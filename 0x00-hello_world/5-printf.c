@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Print "Programming is like building a multingual puzzle
+ * main - Print with proper grammr, but the outcome is a piece of art
  * Return: 0 for proper execution else return non zero
  */
 int main(void)
