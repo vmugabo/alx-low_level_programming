@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * We are prrinting a string without using printf
+ * Main Code - We are prrinting a string without using printf
+ * Return: int 0 for correct output 
  */
 int main(void)
 {
