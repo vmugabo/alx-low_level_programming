@@ -1,8 +1,7 @@
 #include <stdio.h>
-
 /**
  * main - prints the size of various types on the computer
- * Return: 0 if proper else non-zero 
+ * Return: 0 if proper else non-zero
  */
 int main(void)
 {
