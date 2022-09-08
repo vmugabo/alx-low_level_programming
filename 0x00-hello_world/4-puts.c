@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * Main Code - We are prrinting a string without using printf
- * Return: int 0 for correct output else return non zero
+ * main - We are printing a string without using printf
+ * return: Return 0 for correct output else return non zero
  */
 int main(void)
 {
