@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - We are printing a string without using printf
+ * main - We are printing string "Programming is like building a multingual puzzle without using printf
  * return: return 0 else return non zero
  */
 int main(void)
