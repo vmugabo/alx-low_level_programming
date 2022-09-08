@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Print "Programming is like building a multingual puzzle without using printf
+ * main - Print "Programming is like building a multingual puzzle
  * return: return 0 else return non zero
  */
 int main(void)
