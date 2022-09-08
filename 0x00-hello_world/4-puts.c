@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Print "Programming is like building a multingual puzzle
- * return: return 0 else return non zero
+ * Return: 0 for proper execution else return non zero
  */
 int main(void)
 {
