@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
-* _strncpy - Concatenates two strings
+* *_strncpy - Concatenates two strings
 * @dest: destination string to
 * @src: sorce string from
 * @n:No. of strings
-* return: return destination
+* Return: return destination
 *
 */
 
