@@ -13,48 +13,32 @@ char *move(char *s2);
  * Return: 1 if the strings can be considered identical
  * otherwise 0
  */
-int wildcmp(char *s1, char *s2)
-{
-	int sum = 0;
 
-	if (*s1 == '\0' && *s2 == '*' && !*move(s2))
+int check_pal(char *s, int i, int len);
+int _strlen_recursion(char *s);
+
+
+int is_palindrome(char *s)
+{
+	if (*s == 0)
 		return (1);
-
-	if (*s1 == *s2)
-	{
-		if (*s1 == '\0')
-			return (1);
-		return (wildcmp(s1 + 1, s2 + 1));
-	}
-
-	if (*s1 == '\0' || *s2 == '\0')
-		return (0);
-
-	if (*s2 == '*')
-	{
-		s2 = move(s2);
-		if (*s2 == '\0')
-			return (1);
-		if (*s1 == *s2)
-			sum += wildcmp(s1 + 1, s2 + 1);
-		sum += bandersnatch(s1 + 1, s2);
-		return (!!sum);
-	}
-	return (0);
-}
-int bandersnatch(char *s1, char *s2)
-{
-	if (*s1 == '\0')
-		return (0);
-	if (*s1 == *s2)
-		return (wildcmp(s1, s2));
-	return (bandersnatch(s1 + 1, s2));
+	return (check_pal(s, 0, _strlen_recursion(s)));
 }
 
-char *move(char *s2)
+
+int _strlen_recursion(char *s)
 {
-	if (*s2 == '*')
-		return (move(s2 + 1));
-	else
-		return (s2);
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen_recursion(s + 1));
+}
+
+
+int check_pal(char *s, int i, int len)
+{
+	if (*(s + i) != *(s + len - 1))
+		return (0);
+	if (i >= len)
+		return (1);
+	return (check_pal(s, i + 1, len - 1));
 }
