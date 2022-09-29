@@ -1,19 +1,13 @@
 #include <stdio.h>
 #include "main.h"
-
-int bandersnatch(char *s1, char *s2);
-char *move(char *s2);
-
 /**
- * wildcmp - compares two strings recursively,
- * checking for wildcards expansion
- * @s1: first string to compare
- * @s2: second string to compare
+ * is_palindrome - checks if a string is a palindrome
+ * _strlen_recursion - returns the length of a string
+ * check_pal - checks the characters recursively for palindrome
+ * @s:string
  *
- * Return: 1 if the strings can be considered identical
- * otherwise 0
+ * Return: 1 if it is, 0 it's not
  */
-
 int check_pal(char *s, int i, int len);
 int _strlen_recursion(char *s);
 
