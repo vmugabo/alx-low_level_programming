@@ -4,6 +4,8 @@
  * is_palindrome - checks if a string is a palindrome
  * _strlen_recursion - returns the length of a string
  * check_pal - checks the characters recursively for palindrome
+ * @i: iterator
+ * @len: length of the string
  * @s:string
  *
  * Return: 1 if it is, 0 it's not
