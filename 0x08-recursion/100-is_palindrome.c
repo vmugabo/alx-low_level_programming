@@ -5,6 +5,7 @@
  * _strlen_recursion - returns the length of a string
  * check_pal - checks the characters recursively for palindrome
  * @i: iterator
+ * _strlen_recursion - returns the length of a string
  * @len: length of the string
  * @s:string
  *
